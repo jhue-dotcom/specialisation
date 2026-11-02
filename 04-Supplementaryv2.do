@@ -1,7 +1,10 @@
 global path "`c(pwd)'"
 global tablepath "$path\outputv2"
 global graphpath "$path\figuresv2"
+adopath ++ "$path\ado"
+
 cd "$path\cleaneddata"
+
 
 set scheme stcolor
 
