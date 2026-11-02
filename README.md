@@ -7,7 +7,8 @@ This directory contains the Stata code, experimental records, intermediate datas
 | Location | Contents |
 |---|---|
 | `raw_data/` | 18 original z-Tree Excel exports (`.xls`) used as the source data. |
-| `cleaneddata/` | Intermediate and analysis-ready Stata datasets (`.dta`), plus the project-specific `estpost_clustered_diff.ado`. |
+| `cleaneddata/` | Intermediate and analysis-ready Stata datasets (`.dta`). |
+| `ado/` | Project-specific Stata program: `estpost_clustered_diff.ado`. |
 | `outputv2/` | 32 generated LaTeX table fragments (`.tex`). |
 | `figuresv2/` | 20 generated PNG figures. |
 | `01-gendatav4.do` | Imports the z-Tree Excel exports and creates merged intermediate datasets. |
@@ -29,7 +30,11 @@ Replication requires Stata and the following user-written commands:
 - `xlincom`
 - `grc1leg`
 
-The scripts also invoke the `stcolor` graphics scheme. Install the required commands/scheme in Stata before running the code, using the version appropriate to your Stata installation. The package includes the project-specific `cleaneddata/estpost_clustered_diff.ado`; retain it in that location or add its directory to Stata's adopath.
+The scripts also invoke the `stcolor` graphics scheme. Install the required commands/scheme in Stata before running the code, using the version appropriate to your Stata installation. The package includes the project-specific `ado/estpost_clustered_diff.ado`. After defining the project path, make that directory available to Stata:
+
+```stata
+adopath ++ "$path\ado"
+```
 
 ## Reproducing the analyses
 
