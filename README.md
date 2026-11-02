@@ -60,4 +60,4 @@ do 04-Supplementaryv2.do
 
 ## Citation and contact
 
-Please cite the associated paper when using this package. Add the final paper citation, DOI, repository DOI, licence, and corresponding-author contact before public release.
+Please cite the associated paper when using this package.
